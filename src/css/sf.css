@@ -1,11 +1,22 @@
 body {
-  padding-top: 50px;
+	padding-top: 50px;
 }
-.site-content{
-  padding: 40px 15px;
-  text-align: center;
+.site-content {
+	padding: 40px 15px;
+	text-align: center;
 }
+.site-footer {
+}
+.sf-search-button {
+	background-color: #F2F8FC;
+	text-align: center;
+	border-left: 1px solid #0075C2;
+	border-right: 1px solid #0075C2;
+	border-bottom: 1px solid #0075C2;
+	padding: 20px 15px 0
+}
+.tal {text-align: left}
+.tac {text-align: center}
+.tar{text-align: right}
 
-.site-footer{
-	
-}
+.clrb3, a.clrb3 {color: #0075C2} /*TODO : change later*/

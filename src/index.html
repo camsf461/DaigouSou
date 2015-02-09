@@ -1,60 +1,83 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--??-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--??-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/sf.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/sf.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-	<title>Foregin Purchase</title>   <!-- Need to rethink the title of the tab-->
-</head>
+		<title>Foregin Purchase</title>   <!-- Need to rethink the title of the tab-->
+	</head>
 
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" >
-					
-				</button>
-				<a class="navbar-brand" href="#">Site Logo</a>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" >
+						
+					</button>
+					<a class="navbar-brand" href="#">Site Logo</a>
+				</div>
+				
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
+		</nav>
+		
+		<!-- show sliders, advertisments, websites introductions -->
+		<div class="site-content">	
+			<h1>Pictures or Sliders come here</h1>
 		</div>
-	</nav>
-	
-	<!-- show sliders, advertisments, websites introductions -->
-	<div class="site-content">	
-		<h1>Pictures or Sliders come here</h1>
-	</div>
 
-	<!-- User case starts from here, by choosing what to buy and where to buy -->
-	<div class="container">
-		<div class="bg1 rds1 clrw1 sz16 bold" style="height:38px;background-position:0 -43px;background-repeat:repeat-x;padding:10px 20px">
-			You want to Buy  ---       From
+		<!-- User case starts from here, by choosing what to buy and where to buy -->
+
+
+		<div class="sf-search-button">
+			<form action="" method="post" style="margin:0">
+				<input type='hidden' name='csrfmiddlewaretoken' value='qGUwr4rlknsgy9bbqp9MYfTHynEnOSGX' />
+				<div class="row">
+					<div class="col-sm-3">
+						<span class="tal clrb3 bold">What do you want to buy?</span>
+						<select style="margin:0;width:50%" name="product_group">
+							<option>Baby Milk</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<span class="tal clrb3 bold">Buy From</span>
+						<select style="margin:0;width:50%" name="buy_from">
+							<option value="CN">中国大陆</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<span class="tal clrb3 bold">Deliver To</span>
+						<select style="margin:0;width:50%" name="delivery_to">
+							<option value="CN">HK</option>
+						</select>
+					</div>
+				</div>
+			</form>
 		</div>
-	</div>
 
 
-    <!-- footer -->
-    <div class="site-footer">
-    	
-    	
-    </div>
 
-</body>
-</html>
+		<!-- footer -->
+		<div class="site-footer">
+
+
+		</div>
+
+	</body>
+	</html>
